@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.square-container-inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  min-width: 100px;
+  min-height: 100px;
+  margin-bottom: 20px;
+  border: 1px solid #fa9b9b !important;
+}
+
+.game-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 1px solid #9bfaa8;
+}
+
+.game-board-inner {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.square {
+  display: inline-block !important;
+  width: 40px !important;
+  height: 40px !important;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.square.selected {
+  border: 2px solid blue;
+}
+
+.timer {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  min-width: 50px;
+  min-height: 20px;
+  border: 1px solid #d79bfa;
+}
